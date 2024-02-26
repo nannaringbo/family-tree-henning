@@ -20,7 +20,7 @@ function FamilyMember({ name }) {
       {details && (
         <div className="details-container">
           <p>Details</p>
-          <ul class="detail-list">
+          <ul className="detail-list">
             <li>Age:{name.Age}</li>
             <li>Shoesize: {name.ShoeSize}</li>
             <li>Gender: {name.Gender}</li>

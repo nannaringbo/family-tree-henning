@@ -11,7 +11,7 @@ const AvgShoeSize = ({ allFamilyMembers }) => {
   let sumM = 0;
   const femaleAges = [];
   const maleAges = [];
-  const allAges = allFamilyMembers.map((member) => {
+  allFamilyMembers.map((member) => {
     //mapping through the array of all familymembers to divide them into Male or Female
     if (member.Gender === "F") {
       femaleAges.push(member.Age);
