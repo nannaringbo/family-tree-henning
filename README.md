@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# README
 
 In order to run this React App successfully, there are a few steps you need to follow which are outlined below.
 
