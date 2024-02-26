@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BarChart from "./components/BarChart";
+import AvgShoeSize from "./components/AvgShoeSize";
+import Data from "./components/Data";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    const listAllFamilyMembers = []; //array of all familymembers
+
+    return (
+      <div className="App">
+        <div className="personal-greeting">
+          <h3>Hello Henning,</h3>
+          <h1>Welcome to your personal Family Tree!</h1>
+        </div>
+        <Data allFamilyMembers={listAllFamilyMembers} />
+        <BarChart allFamilyMembers={listAllFamilyMembers} />
+        <AvgShoeSize allFamilyMembers={listAllFamilyMembers} />
+      </div>
+    );
+  }
 }
-
 export default App;
